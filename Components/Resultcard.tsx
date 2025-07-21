@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { Copy, Check } from 'lucide-react-native';
-import colors from '@/constants/colors';
+import colors from '../Constants/Colors';
 import * as Clipboard from 'expo-clipboard';
 import { Platform } from 'react-native';
 
