@@ -1,0 +1,9 @@
+@@ .. @@
+   "scripts": {
+-    "start": "bunx rork start -p 5xv08sx3y1fwffd8vpyc7 --tunnel",
+-    "dev": "bunx rork dev -p 5xv08sx3y1fwffd8vpyc7 --tunnel",
+-    "build": "bunx rork build -p 5xv08sx3y1fwffd8vpyc7"
++    "start": "npx rork start -p 5xv08sx3y1fwffd8vpyc7 --tunnel",
++    "dev": "npx rork dev -p 5xv08sx3y1fwffd8vpyc7 --tunnel",
++    "build": "npx rork build -p 5xv08sx3y1fwffd8vpyc7"
+   },
