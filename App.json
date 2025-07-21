@@ -25,7 +25,16 @@
       "package": "app.rork.handwrite-ai-cloner"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro",
+      "output": "static",
+      "build": {
+        "babel": {
+          "include": [
+            "nativewind"
+          ]
+        }
+      }
     },
     "plugins": [
       [

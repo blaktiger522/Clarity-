@@ -3,9 +3,13 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "bunx rork start -p 5xv08sx3y1fwffd8vpyc7 --tunnel",
-    "start-web": "bunx rork start -p 5xv08sx3y1fwffd8vpyc7 --web --tunnel",
-    "start-web-dev": "DEBUG=expo* bunx rork start -p 5xv08sx3y1fwffd8vpyc7 --web --tunnel"
+    "start": "expo start",
+    "start-web": "expo start --web",
+    "build": "expo export --platform web",
+    "build-web": "expo export --platform web",
+    "export": "expo export --platform web",
+    "dev": "expo start --web",
+    "preview": "expo start --web --https"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
