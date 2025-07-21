@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
-import { Home, History } from '@components'; // Adjust import if needed
-import colors from '@constants/colors';
+import { Home, History } from 'lucide-react-native';
+import colors from '../../Constants/Colors';
 
 export default function TabLayout() {
   return (
@@ -27,7 +27,7 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarLabel: 'Home',
-          tabBarIcon: ({ color }) => <Home color={color} />,
+          tabBarIcon: ({ color, size }) => <Home color={color} size={size} />,
         }}
       />
       <Tabs.Screen
@@ -35,7 +35,7 @@ export default function TabLayout() {
         options={{
           title: 'History',
           tabBarLabel: 'History',
-          tabBarIcon: ({ color }) => <History color={color} />,
+          tabBarIcon: ({ color, size }) => <History color={color} size={size} />,
         }}
       />
     </Tabs>
