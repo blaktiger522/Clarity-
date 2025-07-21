@@ -1,22 +1,21 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
-import { Home, History } from '@components'; // Adjust import if needed
-import colors from '@constants/colors';
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.darkGray,
+        tabBarActiveTintColor: '#007AFF',
+        tabBarInactiveTintColor: '#8E8E93',
         tabBarStyle: {
-          borderTopColor: colors.mediumGray,
+          borderTopColor: '#E5E5EA',
         },
         headerStyle: {
-          backgroundColor: colors.white,
+          backgroundColor: '#FFFFFF',
         },
         headerTitleStyle: {
-          color: colors.text,
+          color: '#000000',
           fontWeight: '600',
         },
         headerShown: false,
@@ -27,7 +26,9 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarLabel: 'Home',
-          tabBarIcon: ({ color }) => <Home color={color} />,
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="home" size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -35,7 +36,9 @@ export default function TabLayout() {
         options={{
           title: 'History',
           tabBarLabel: 'History',
-          tabBarIcon: ({ color }) => <History color={color} />,
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name="history" size={size} color={color} />
+          ),
         }}
       />
     </Tabs>

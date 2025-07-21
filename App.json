@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Handwrite AI Cloner",
-    "slug": "handwrite-ai-cloner",
+    "name": "ClarifAI",
+    "slug": "clarifai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -28,13 +28,7 @@
       "favicon": "./assets/images/favicon.png",
       "bundler": "metro",
       "output": "static",
-      "build": {
-        "babel": {
-          "include": [
-            "nativewind"
-          ]
-        }
-      }
+      "name": "ClarifAI"
     },
     "plugins": [
       [
