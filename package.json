@@ -39,3 +39,7 @@
   },
   "private": true
 }
+"scripts": {
+  "prepare": "npm install --legacy-peer-deps",
+  ...
+}
